@@ -4,19 +4,23 @@ body {
 	color: #ECECEC;
 
 	background-color: #202020;
+	/*Centers the webpage*/
 	text-align: center;
 }
 
 div {
-	/*Sets the dimensions of sections to ensure they are spaced correctly*/
+	/*Sets the dimensions of divs to ensure they are spaced correctly*/
 	padding: 10px;
 	min-width: 300px;
 	max-width: 600px;
+	/*Aligns the text left on the centered webpage*/
 	margin: 0 auto;
 	float: center;
 	text-align: left;
 }
 
+/*contactinfo and picture are displayed in 
+the same row if there is enough space*/
 #contactinfo {
 	width: 45%;
 	max-width: 300px;
