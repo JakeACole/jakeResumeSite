@@ -1,42 +1,62 @@
 /*Jake A. Cole's styles.css file for jakeResumeSite*/
-
 body {
 	font-family: helvetica;
 	color: #ECECEC;
-	/*Makes the background fixed*/
-	background-attachment: fixed; 
-}
-h1 {
-	font-style: italic;
-	text-decoration: underline;
-}
 
-h2 {
-	font-style: italic;
-	text-decoration: underline;
-}
-
-h4 {
-	font-style: italic;
+	background-color: #202020;
+	text-align: center;
 }
 
 div {
-	width: 100%;
+	/*Sets the dimensions of sections to ensure they are spaced correctly*/
+	padding: 10px;
+	min-width: 300px;
+	max-width: 600px;
+	margin: 0 auto;
+	float: center;
+	text-align: left;
 }
 
-section {
-	min-width: 400px;
-	padding-bottom: 12px;
-	padding-left: 12px;
+#contactinfo {
+	width: 45%;
+	max-width: 300px;
+	height: 200px;
+	display: inline-block;
 }
 
 #picture { 
-	padding-top: 24px;
+	width: 45%;
+	max-width: 300px;
+	height: 200px;
+	display: inline-block;
+}
 
+#message {
+	max-width: 600px;
 }
 
 #picture img { 
-	border:4px solid #000;
+	/*Adds a border around the picture*/
+	border-radius:5px;
+	border:5px solid #111111;
+}
+
+#nav-bar {
+	/*Sets the dimensions of the navigation bar*/
+	width: 100%;
+    height: 32px;
+    min-width: 400px;
+
+    /*Makes the Navigation bar somewhat transparent*/
+    background-color: #111111; 
+    opacity: 0.75;  
+
+    /*Makes the Navigation bar fixed to the top of the screen*/
+    position: fixed;
+    list-style-type: none;
+    top: 0;
+    margin: 0;
+    padding: 0;
 }
 
 #nav-bar li {
@@ -45,22 +65,17 @@ section {
 	margin: 5px;
 }
 
-#nav-bar {
-	/*Sets the dimension sof the navigation bar*/
-	width: 100%;
-    height: 32px;
-    min-width: 500px;
+/* Allows for the courses left and courses right to be displayed on one row*/
+#courses-left { 
+	display: block;
+	float: left; 
+	margin-right: 10px; 
+}
 
-    /*Makes the Navigation bar somewhat transparent*/
-    background-color: #111111; 
-    opacity: 0.75;  
-
-    /*Makes the Navigation bar fixed to the top of the screen*/  
-    position: fixed;
-    list-style-type: none;
-    top: 0;
-    margin: 0;
-    padding: 0;
+#courses-right {  
+	display: block;
+	float: left;
+	padding-bottom: 50px;
 }
 
 /*The links are colored cyan to be easily viewed with the dark background I chose*/
@@ -85,15 +100,16 @@ a:active {
     text-decoration: underline;
 }
 
-/* Allows for the courses left and courses right to be displayed on one row*/
-#courses-left { 
-	display: block;
-	float: left; 
-	margin-right: 10px; 
+h1 {
+	font-style: italic;
+	text-decoration: underline;
 }
 
-#courses-right {  
-	display: block;
-	float: left;
-	padding-bottom: 50px;
+h2 {
+	font-style: italic;
+	text-decoration: underline;
+}
+
+h4 {
+	font-style: italic;
 }

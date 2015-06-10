@@ -1,143 +1,134 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 	<head>
-		<!--Head of the file, where the title is located-->	
+		<!--Head of the html file -->	
 		<meta charset = "UTF-8">
-		<title>Jake's Resume Page</title>
-		<meta name="author" content="Jake A. Cole">
-		<link rel="StyleSheet" type="text/css" href="css/styles.css">
-		<!-- Source of background wallpaper: http://hdwallpapersfit.com/wp-content/uploads/2015/04/best-dark-grey-background.jpg-->
-		<body background="img/background.png">
+		<meta name="author" content="Jake Anthony Cole"/>
+		<title>Jake Cole's Resume</title>
+		<link rel="StyleSheet" type="text/css" href="css/styles.css"/>
 	</head>
 
 	<!-- This is the body of the html file -->
 	<body>
-		<div>	
 			<!--This is the navigation bar section -->
-			<ul id="nav-bar">
-				<li><a href="#contactinfo">Contact</a></li>
-				<li><a href="#education">Education</a></li>
-				<li><a href="#qualifications">Qualifications</a></li>
-				<li><a href="#relatedcourses">Related Courses</a></li>
+		<ul id="nav-bar">
+			<li><a href="#contactinfo">Contact</a></li>
+			<li><a href="#education">Education</a></li>
+			<li><a href="#qualifications">Qualifications</a></li>
+			<li><a href="#relatedcourses">Experience</a></li>
+		</ul>
+
+		<div id="contactinfo">	
+
+		<!--This is the contact informarion section -->
+
+			<h1>Jake A. Cole</h1>
+
+			<!--These are links to my email, cell, github repositories, and resume -->
+			<p> Email:  
+			<a href="mailto:jakeacole@gmail.com">jakeacole@gmail.com</a> </p>
+
+			<p> Cell: 
+			<a href="tel:1-203-644-5483">+1(203) 644-5483</a></p>
+
+			<p> GitHub: 
+			<a href="https://github.com/jakeacole" target="_blank">github.com/jakeacole</a> </p>
+
+			<p> Resume:
+			<a href="https://drive.google.com/file/d/0B5Cvm-bRlE4MVWNrQWd1YkhCdjA/view?usp=sharing" target="_blank">My Resume</a> </p>
+
+		</div>
+
+		<div id="picture">
+					<img src="img/jake.png" alt="Jake's picture">
+		</div>
+
+		<div id="message">
+			<p>As a versed software engineer that has graduated from the University of New Haven, I am looking for a position that will require the skills I have developed in my math, engineering and programming courses. As a software engineer, I am seeking a position where I can apply my passion for software development as well as acquiring experience by working in my field of study. I am eager to utilize the experience and knowledge that I have learned at UNH and apply it in a fresh and innovate way.</p>
+		</div>
+
+		<!--This is the education section -->
+		<div id="education">
+
+			<h2>Education:</h2>
+			
+			<h4>University of New Haven, West Haven, CT</h4>
+
+			<p>Bachelor of Science, Computer Engineering, May 2015</p>
+			<p>Minor: Computer Science</p>
+			<p>Overall GPA: 3.3/4.0</p>
+			<p>	IEEE-Eta Kappa Nu Honor Society</p>
+
+		</div>
+
+		<!--This is the qualifications section -->
+		<div id="qualifications">
+			<h2>Summary of Qualifications:</h2>
+
+			<!--I used an unordered list to group my qualifications -->
+			<ul>
+				<li> Knowledge in C, C++, VHDL, VBA, Python and Java programming languages</li>
+				<li>Understanding of Visual Studio, Code::Blocks and Eclipse</li>
+				<li>Versed programmer with experience in object-oriented design</li>
+				<li>Adept mathematical, troubleshooting and problem solving skills</li>
+				<li>Developed communication, critical thinking, teamwork and analytical skills</li>
 			</ul>
 
-			<!--This is the contact informarion section -->
-			<section id="contactinfo">
+		</div>
 
-				<section id="picture">
-					<img src="img/jake.png">
-				</section>
+		<!--This is the unh extracurricular activities section -->
+		<div id="unhactivities">
+			<h2>UNH Extracurricular Activities: </h2>
 
-				<h1>Jake Anthony Cole</h1>
+			<!--I used unordered lists to group things -->
+			<h4>IEEE Club Computer Engineering President</h4>
 
-				<!--These are links to my email, cell, github repositories, and resume -->
-				<p> Email:  
-				<a href="mailto:jakeacole@gmail.com">jakeacole@gmail.com</a>
-				</p>
+			<ul>
+				<li>E-Board Representative</li>
+				<li>Helped to organize Club Events and recruit new members to the Club</li>
+				<li>Provided guidance to newer members of the Club</li>
+			</ul>
 
-				<p> Cell: 
-				<a href="tel:1-203-644-5483">+1(203) 644-5483</a>
-				</p>
-
-				<p> GitHub: 
-				<a href="https://github.com/jakeacole">github.com/jakeacole</a>
-				</p>
-
-				<p> Resume:
-				<a href="https://drive.google.com/file/d/0B5Cvm-bRlE4MVWNrQWd1YkhCdjA/view?usp=sharing">My Resume</a>
-				</p>
-
-				<p>
-				As a versed software engineer that has graduated from the University of New Haven, I am looking for a position that will require the skills I have developed in my math, engineering and programming courses. I am looking for a position where I can apply my passion for software engineering as well as acquire experience working in my field of study. I am eager to utilize the experience and knowledge that I have learned at UNH and apply it in a fresh and innovate way.
-				</p>
-
-			</section>
-
-			<!--This is the education section -->
-			<section id="education">
-
-				<h2>Education:</h2>
-				
-				<h4>University of New Haven, West Haven, CT</h4>
-
-				<p>Bachelor of Science, Computer Engineering, May 2015</p>
-				<p>Minor: Computer Science</p>
-				<p>Overall GPA: 3.3/4.0</p>
-				<p>	IEEE-Eta Kappa Nu Honor Society</p>
-
-			</section>
-
-			<!--This is the qualifications section -->
-			<section id="qualifications">
-				<h2>Summary of Qualifications:</h2>
-
-
-				<!--I used an unordered list to group my qualifications -->
-				<ul>
-					<li> Knowledge in C, C++, VHDL, VBA, Python and Java programming languages</li>
-					<li>Understanding of Mictosoft Office, Visual Studio, Code::Blocks and Eclipse</li>
-					<li>Versed programmer with experience in object-oriented design</li>
-					<li>Adept mathematical, troubleshooting and problem solving skills</li>
-					<li>Developed communication, critical thinking, teamwork and analytical skills</li>
-				</ul>
-
-			</section>
-
-			<!--This is the unh extracurricular activities section -->
-			<section id="unhactivities">
-				<h2>UNH Extracurricular Activities: </h2>
-
-				<!--I used unordered lists to group things -->
-				<h4>IEEE Club Computer Engineering President</h4>
-
-				<ul>
-					<li>E-Board Representative</li>
-					<li>Helped to organize Club Events and recruit new members to the Club</li>
-					<li>Provided guidance to newer members of the Club</li>
-				</ul>
-
-				<h4>Robotics Club</h4>
-				
-				<ul>
-					<li>Helped to create an autonomous fire-fighting robot</li>
-					<li>This robot traverses a maze to locate and extinguish a lit candle flame</li>
-					<li>The robot was entered in the Trinity College Fire-fighting Robot Competition</li>
-				</ul>
-
-				<h4>Programming Club</h4>
-				
-				<ul>
-					<li>Cooperated in teams to find solutions to various programming problems</li>
-				</ul>
-
-			</section>
-
-			<!--This is the related courses section -->
-			<section id="relatedcourses">			
-				<h2>Related Courses: </h2>
-
-				<!--The courses are split into two groups to effectively use space -->
-				<section id="courses-left">
-					<ul>
-						<li>Human Computer Interaction</li>
-						<li>Artificial Intelligence</li>
-						<li>Differential Equations</li>					
-						<li>Algorithm Design and Analysis</li>
-						<li>Networking I</li>
-					</ul>
-				</section>
+			<h4>Robotics Club</h4>
 			
-				<section id="courses-right">
-					<ul>					
-						<li>Digital Systems II</li>
-						<li>Random Signal Analysis</li>
-						<li>System on Chip</li>
-						<li>Computer Architecture</li>
-						<li>Electronics I</li>						
-					</ul>
-				</section>				
+			<ul>
+				<li>Helped to create an autonomous fire-fighting robot</li>
+				<li>This robot traverses a maze to locate and extinguish a lit candle flame</li>
+				<li>The robot was entered in the Trinity College Fire-fighting Robot Competition</li>
+			</ul>
 
+			<h4>Programming Club</h4>
+			
+			<ul>
+				<li>Cooperated in teams to find solutions to various programming problems</li>
+			</ul>
+
+		</div>
+
+		<!--This is the related courses section -->
+		<div id="relatedcourses">			
+			<h2>Related Courses: </h2>
+
+			<!--The courses are split into two groups to effectively use space -->
+			<section id="courses-left">
+				<ul>
+					<li>Artificial Intelligence</li>					
+					<li>Algorithm Design and Analysis</li>
+					<li>Human Computer Interaction</li>
+					<li>Differential Equations</li>	
+					<li>Networking I</li>
+				</ul>
 			</section>
+		
+			<section id="courses-right">
+				<ul>					
+					<li>Computer Architecture</li>
+					<li>System on Chip</li>
+					<li>Electronics I</li>	
+					<li>Digital Systems II</li>
+					<li>Random Signal Analysis</li>
+				</ul>
+			</section>				
 
 		</div>
 
