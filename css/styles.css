@@ -67,15 +67,12 @@ div {
 
 /* Allows for the courses left and courses right to be displayed on one row*/
 #courses-left { 
-	display: block;
-	float: left; 
+	display: inline-block;
 	margin-right: 10px; 
 }
 
 #courses-right {  
-	display: block;
-	float: left;
-	padding-bottom: 50px;
+	display: inline-block;
 }
 
 /*The links are colored cyan to be easily viewed with the dark background I chose*/
