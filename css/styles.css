@@ -1,42 +1,83 @@
 /*Jake A. Cole's styles.css file for jakeResumeSite*/
+
+/*Used: color #00CCCC on 
+https://color.adobe.com/create/color-wheel/ 
+for color scheme*/
+
 body {
-	font-family: helvetica;
+	font-family: helvetica, arial;
 	color: #ECECEC;
 
 	background-color: #202020;
 	/*Centers the webpage*/
 	text-align: center;
+	width: 100%;
+	font-size: 105%;
 }
 
-div {
-	/*Sets the dimensions of divs to ensure they are spaced correctly*/
+header { 
+	/*Sets the dimensions of sections to ensure they are spaced correctly*/
 	padding: 10px;
 	min-width: 300px;
-	max-width: 600px;
+	max-width: 800px;
 	/*Aligns the text left on the centered webpage*/
 	margin: 0 auto;
-	float: center;
 	text-align: left;
+}
+
+section {
+	/*Sets the dimensions of sections to ensure they are spaced correctly*/
+	padding: 10px;
+	min-width: 400px;
+	max-width: 800px;
+	/*Aligns the text left on the centered webpage*/
+	margin: 0 auto;
+	text-align: left;
+}
+
+hr {
+	border-color: #0BD964;
+	width: 66%
+}
+
+ul {
+	list-style: none;
+    padding:0;
+    margin:0;
+}
+
+li:before{
+	font-size: 125%;
+	content: "• ";
+	color: #0BD964;
 }
 
 /*contactinfo and picture are displayed in 
 the same row if there is enough space*/
-#contactinfo {
+#contact-info {
 	width: 45%;
-	max-width: 300px;
-	height: 200px;
+	min-width: 250px;
+	max-width: 400px;
 	display: inline-block;
+	margin-right: 5px;
+
+	float: left;
 }
 
 #picture { 
 	width: 45%;
-	max-width: 300px;
-	height: 200px;
+	min-width: 200px;
+	max-width: 400px;
 	display: inline-block;
+
+	padding-top: 32px;
+
+	float: right;
 }
 
-#message {
-	max-width: 600px;
+#bio {
+	clear: both;
+	max-width: 800px;
 }
 
 #picture img { 
@@ -45,7 +86,7 @@ the same row if there is enough space*/
 	border:5px solid #111111;
 }
 
-#nav-bar {
+nav {
 	/*Sets the dimensions of the navigation bar*/
 	width: 100%;
     height: 32px;
@@ -57,22 +98,20 @@ the same row if there is enough space*/
 
     /*Makes the Navigation bar fixed to the top of the screen*/
     position: fixed;
-    list-style-type: none;
     top: 0;
     margin: 0;
     padding: 0;
 }
 
-#nav-bar li {
-	/*Allows for the navigation bar to have multiple items in a row spaced correctly*/
+#wrap {
+	margin: 6px;
 	display: inline-block;
-	margin: 5px;
 }
 
 /* Allows for the courses left and courses right to be displayed on one row*/
 #courses-left { 
 	display: inline-block;
-	margin-right: 10px; 
+	margin-right: 25%; 
 }
 
 #courses-right {  
@@ -107,6 +146,7 @@ h1 {
 }
 
 h2 {
+	color: #0B6CD9;
 	font-style: italic;
 	text-decoration: underline;
 }
