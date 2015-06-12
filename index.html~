@@ -54,7 +54,10 @@
 
 		</header>
 
+<<<<<<< HEAD
 		<!-- This is the about me section -->
+=======
+>>>>>>> dev
 		<section id="bio">
 				<h2>About Me:</h2>
 
