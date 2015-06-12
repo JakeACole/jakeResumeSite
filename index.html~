@@ -15,13 +15,13 @@
 		<!--This is the navigation bar section -->
 		<nav>
 			<!-- The nav bar links are wrapped for formatting purposes -->
-			<div class="wrap">
+			<div id="wrap">
 			<a href="#contact-and-pic">Contact</a> </div>
-			<div class="wrap">
+			<div id="wrap">
 			<a href="#education">Education</a> </div>
-			<div class="wrap">
+			<div id="wrap">
 			<a href="#experience">Experience</a> </div>
-			<div class="wrap">
+			<div id="wrap">
 			<a href="#qualifications">Qualifications</a> </div>
 		</nav>	
 
@@ -54,7 +54,10 @@
 
 		</header>
 
+<<<<<<< HEAD
 		<!-- This is the about me section -->
+=======
+>>>>>>> dev
 		<section id="bio">
 				<h2>About Me:</h2>
 

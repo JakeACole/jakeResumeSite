@@ -62,11 +62,13 @@ footer {
 }
 
 hr {
+	/*Sets the color and width of the horizontal reference line*/
 	border-color: #0BD964;
 	width: 66%
 }
 
 ul {
+	/*Allows for custom colored bullets*/
 	list-style: none;
     padding:0;
     margin:0;
@@ -91,17 +93,19 @@ h4 {
 
 
 li:before{
+	/*Colors custom bullets green*/
 	content: "• ";
 	color: #0BD964;
 }
 
 /*contactinfo and picture are displayed in 
-the same row if there is enough space*/
+the same row as long as there is enough space*/
 #contact-info {
 	min-width: 250px;
 	max-width: 400px;
 	display: inline-block;
 
+	/*Allows for the contact information to float on the left side of the screen*/
 	float: left;
 }
 
@@ -110,12 +114,15 @@ the same row if there is enough space*/
 	max-width: 400px;
 	display: inline-block;
 
+	/*Adds some padding above the picture to relocate it in an aesthetically pleasing location*/
 	padding-top: 24px;
 
+	/*Allows for the picture to float on the right side of the screen*/
 	float: right;
 }
 
 #bio {
+	/*Clears the float property so that the sections have proper format*/
 	clear: both;
 	min-width: 300px;
 	max-width: 800px;
@@ -127,7 +134,7 @@ the same row if there is enough space*/
 	border:12px solid ##202020;
 }
 
-#wrap {
+div.wrap {
 	margin: 6px;
 	display: inline-block;
 }
