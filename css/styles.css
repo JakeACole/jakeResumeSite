@@ -5,18 +5,18 @@ https://color.adobe.com/create/color-wheel/
 for color scheme*/
 
 body {
-	font-family: helvetica, arial;
-	color: #ECECEC;
+	font-family: helvetica, arial !important;
+	color: #ECECEC !important;
 
-	background-color: #202020;
+	background-color: #202020 !important;
 	/*Centers the webpage*/
 	text-align: center;
 }
 
-header, section, footer { 
+header, section.row, footer { 
 	/*Sets the dimensions of sections to ensure they are spaced correctly*/
 	padding: 10px;
-	min-width: 300px;
+	min-width: 400px;
 	max-width: 800px;
 	/*Aligns the text left on the centered webpage*/
 	margin: 0 auto;
@@ -26,41 +26,37 @@ header, section, footer {
 nav {
 	/*Sets the dimensions of the navigation bar*/
 	width: 100%;
-    height: 32px;
-    min-width: 400px;
 
     /*Makes the Navigation bar somewhat transparent*/
-    background-color: #111111; 
-    opacity: 0.75;  
+    background-color: #111111 !important; 
+    opacity: 0.75 !important;  
 
     /*Makes the Navigation bar fixed to the top of the screen*/
     position: fixed;
     top: 0;
     margin: 0;
     padding: 0;
+
+    font-size: 120%;
 }
 
 hr {
 	/*Sets the color and width of the horizontal reference line*/
-	border-color: #0BD964;
-	width: 66%
+	border-color: #0BD964 !important;
+	width: 66%;
+	padding-top: 32px;
 }
 
 ul {
 	/*Allows for custom colored bullets*/
 	list-style: none;
-    padding:0;
-    margin:0;
+    padding: 0;
+    margin: 0;
 }
 
 
-h1 {
-	color: #0B6CD9;
-	font-style: italic;
-}
-
-h2 {
-	color: #0B6CD9;
+h1, h2{
+	color: #0B6CD9 !important;
 	font-style: italic;
 }
 
@@ -68,31 +64,31 @@ h4 {
 	font-style: italic;
 }
 
+p {
+	font-size: 16px;
+}
 
 li:before{
 	/*Colors custom bullets green*/
 	content: "• ";
-	color: #0BD964;
+	color: #0BD964 !important;
 }
 
 /*contactinfo and picture are displayed in 
 the same row as long as there is enough space*/
 #contact-info {
-	min-width: 250px;
-	max-width: 400px;
 	display: inline-block;
+	padding-top:28px;
 
 	/*Allows for the contact information to float on the left side of the screen*/
 	float: left;
 }
 
 #picture { 
-	min-width: 200px;
-	max-width: 400px;
 	display: inline-block;
 
 	/*Adds some padding above the picture to relocate it in an aesthetically pleasing location*/
-	padding-top: 24px;
+	padding-top: 48px;
 
 	/*Allows for the picture to float on the right side of the screen*/
 	float: right;
@@ -101,14 +97,12 @@ the same row as long as there is enough space*/
 #bio {
 	/*Clears the float property so that the sections have proper format*/
 	clear: both;
-	min-width: 300px;
-	max-width: 800px;
 }
 
 #picture img { 
 	/*Adds a border around the picture*/
-	border-radius:24px;
-	border:6px solid #202020;
+	border-radius: 24px;
+	border: 6px solid #202020 !important;
 }
 
 div.wrap {
@@ -117,47 +111,66 @@ div.wrap {
 }
 
 /* Allows for the courses left and courses right to be displayed on one row*/
-#courses-left { 
+div.courses-left { 
 	display: inline-block;
-	margin-right: 25%; 
+	float: left;
 }
 
-#courses-right {  
+div.courses-right {  
 	display: inline-block;
+	float: left;
+}
+
+#unh-activities {
+	clear: both;
 }
 
 /*The links are colored to be easily viewed with the dark background I chose*/
-a:link {
-	color: #00CCCC;
-    text-decoration: underline;
-}
-
-a:visited {
-	color: #00CCCC;
+a:link, a:visited  {
+	color: #00CCCC !important;
     text-decoration: underline;
 }
 
 /*When a link is highlighted over or clicked, it glows white*/
-a:hover {
-	color: #ECECEC;
-    text-decoration: underline;
-}
-
-a:active {
-	color: #ECECEC;
+a:hover, a:active  {
+	color: #ECECEC !important;
     text-decoration: underline;
 }
 
 /*Adding mobile capability*/
-@media screen and (max-width: 500px) {
+@media (max-width: 500px) {
+
+	h1 {
+		font-size: 32px;
+	}
+
+	h2 {
+		font-size: 24px;
+	}
+
+	h4 {
+		font-size: 18px;
+	}
+
+	p {
+		font-size: 16px;
+	}
 
 	nav {
-		font-size: 90%;
-		margin-left: -18px;
+		font-size: 16px;
 	}
 	
+	header, section.row, footer { 
+	padding: 6px;
+
+	}
+
+	#contact-info {
+	}
+
 	#picture{
 		padding-top: 6px;
 		float: left;
 	}
 }
+
