@@ -41,14 +41,9 @@ nav {
 
 hr {
 	/*Sets the color and width of the horizontal reference line*/
-<<<<<<< HEAD
-	border-color: #0BD964;
-	width: 66%
-=======
 	border-color: #0BD964 !important;
 	width: 66%;
 	padding-top: 32px;
->>>>>>> dev
 }
 
 ul {
@@ -81,44 +76,19 @@ h4 {
 li:before{
 	/*Colors custom bullets green*/
 	content: "• ";
-<<<<<<< HEAD
-	color: #0BD964;
-}
-
-/*contactinfo and picture are displayed in 
-the same row as long as there is enough space*/
-#contact-info {
-	min-width: 250px;
-	max-width: 400px;
-	display: inline-block;
-
-	/*Allows for the contact information to float on the left side of the screen*/
-	float: left;
-=======
 	color: #0BD964 !important;
->>>>>>> dev
 }
 
-#name-and-pic {
-	/*Adds padding to the top and displays the name and pic on the same line*/
+#name {
 	padding-top: 48px;
 	display: inline-block;
-<<<<<<< HEAD
-
-	/*Adds some padding above the picture to relocate it in an aesthetically pleasing location*/
-	padding-top: 24px;
-
-	/*Allows for the picture to float on the right side of the screen*/
-	float: right;
 }
 
-#bio {
-	/*Clears the float property so that the sections have proper format*/
-	clear: both;
-	min-width: 300px;
-	max-width: 800px;
-=======
->>>>>>> dev
+#picture { 
+	display: inline-block;
+
+	/*Adds some padding above the picture to relocate it in an aesthetically pleasing location*/
+	padding-top: 48px;
 }
 
 #picture img { 
@@ -161,3 +131,5 @@ a:hover, a:active  {
 	color: #ECECEC !important;
     text-decoration: underline;
 }
+
+
