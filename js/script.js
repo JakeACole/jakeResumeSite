@@ -8,9 +8,9 @@ $(document).ready(function(){
 	var experience = $('#nav3');
 	var qualifications = $('#nav4');
 
-	//Slow scrolls to the contact section
+	//Slow scrolls to the name and pic section
 	contact.click(function() {
-	  $("html, body").animate({ scrollTop: $('#contact-and-pic').offset().top }, "slow");
+	  $("html, body").animate({ scrollTop: $('#name-and-pic').offset().top }, "slow");
 	  return false;
 	});
 

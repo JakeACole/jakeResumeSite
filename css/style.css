@@ -79,10 +79,16 @@ li:before{
 	color: #0BD964 !important;
 }
 
-#name-and-pic {
-	/*Adds padding to the top and displays the name and pic on the same line*/
+#name {
 	padding-top: 48px;
 	display: inline-block;
+}
+
+#picture { 
+	display: inline-block;
+
+	/*Adds some padding above the picture to relocate it in an aesthetically pleasing location*/
+	padding-top: 48px;
 }
 
 #picture img { 
@@ -125,3 +131,5 @@ a:hover, a:active  {
 	color: #ECECEC !important;
     text-decoration: underline;
 }
+
+
