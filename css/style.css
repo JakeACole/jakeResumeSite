@@ -15,7 +15,7 @@ body {
 section.row, footer { 
 	/*Sets the dimensions of sections to ensure they are spaced correctly*/
 	padding: 10px;
-	min-width: 400px;
+	min-width: 500px;
 	max-width: 800px;
 	/*Aligns the text left on the centered webpage*/
 	margin: 0 auto;
@@ -25,7 +25,7 @@ section.row, footer {
 nav {
 	/*Sets the dimensions of the navigation bar*/
 	width: 100%;
-	min-width: 400px;
+	min-width: 500px;
 
     /*Makes the Navigation bar somewhat transparent*/
     background-color: #111111 !important; 
@@ -36,7 +36,7 @@ nav {
     top: 0;
     margin: 0;
     padding: 0;
-    font-size: 125% !important;
+    font-size: 150% !important;
 }
 
 hr {
@@ -61,7 +61,6 @@ h1 {
 
 h1, h2, h4, p, ul, nav, div {
 	font-family: 'Roboto', sans-serif;
-
 }
 
 h1, h2{
@@ -73,6 +72,10 @@ h4 {
 	font-style: italic;
 }
 
+p, li {
+	font-size: 18px;
+}
+
 li:before{
 	/*Colors custom bullets green*/
 	content: "• ";
@@ -80,15 +83,15 @@ li:before{
 }
 
 #name {
-	padding-top: 48px;
 	display: inline-block;
+	margin-top: 48px;
 }
 
 #picture { 
 	display: inline-block;
 
 	/*Adds some padding above the picture to relocate it in an aesthetically pleasing location*/
-	padding-top: 48px;
+	margin-top: 48px;
 }
 
 #picture img { 
@@ -100,9 +103,10 @@ li:before{
 	border: 2px solid #0B6CD9 !important;
 }
 
-div.wrap {
-	margin: 6px;
+/*In-line Spacing for the navbar buttons*/
+#button-list div {
 	display: inline-block;
+	margin-right: 20px;
 }
 
 /* Allows for the courses left and courses right to be displayed on one row*/
@@ -131,5 +135,3 @@ a:hover, a:active  {
 	color: #ECECEC !important;
     text-decoration: underline;
 }
-
-
